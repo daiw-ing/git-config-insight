@@ -7,7 +7,7 @@
 
 ### 添加模板信息
 
-<img src="./as<img width="395" alt="add" src="https://github.com/luoluobing/git-config-insight/assets/62934849/7040481f-50ea-4ede-90fa-9894bc99efa0">
+<img width="395" alt="add" src="https://github.com/luoluobing/git-config-insight/assets/62934849/7040481f-50ea-4ede-90fa-9894bc99efa0">
 
 ### 添加全局模板
 
