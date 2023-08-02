@@ -1,8 +1,13 @@
 {
   "name": "git-config-insight",
-  "displayName": "git-config-insight",
+  "displayName": "git config insight",
   "description": "",
-  "version": "0.0.1",
+  "publisher": "dulala",
+  "version": "0.0.12",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luoluobing/git-config-insight"
+  },
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -39,7 +44,9 @@
     "watch-tests": "tsc -p . -w --outDir out",
     "pretest": "npm run compile-tests && npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js"
+    "test": "node ./out/test/runTest.js",
+    "build": "vsce package",
+    "publish": "vsce publish"
   },
   "devDependencies": {
     "@types/glob": "^8.1.0",
