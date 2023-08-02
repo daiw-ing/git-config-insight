@@ -1,9 +1,9 @@
 {
   "name": "git-config-insight",
-  "displayName": "git config insight",
-  "description": "",
+  "displayName": "Git config insight",
+  "description": "一键配置仓库的Git配置信息",
   "publisher": "dulala",
-  "version": "0.0.12",
+  "version": "0.0.14",
   "repository": {
     "type": "git",
     "url": "https://github.com/luoluobing/git-config-insight"
@@ -14,6 +14,7 @@
   "categories": [
     "Other"
   ],
+ "icon": "icon.png",
   "activationEvents": [
     "onCommand:extension.showGitConfig"
   ],
