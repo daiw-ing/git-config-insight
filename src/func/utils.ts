@@ -42,7 +42,6 @@ export function getGlobalGitTemplates(context: vscode.ExtensionContext) {
   const globalState = context.globalState;
 
   if (!globalState) {
-    vscode.window.showInformationMessage(`获取到的全局模板为空`);
     return [];
   } else {
     const templates = globalState.get(gitTemplateConfigKey) as {
@@ -51,13 +50,7 @@ export function getGlobalGitTemplates(context: vscode.ExtensionContext) {
       email: string;
     }[];
 
-    if (templates && templates?.length > 0) {
-      return templates;
-    } else {
-      vscode.window.showInformationMessage(`获取到的全局模板为空`);
-      return [];
-    }
-    return [];
+    return templates && templates?.length > 0 ? templates : [];
   }
 }
 

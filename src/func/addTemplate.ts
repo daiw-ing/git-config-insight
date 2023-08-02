@@ -65,9 +65,12 @@ const addTemplate = function (context: vscode.ExtensionContext) {
     });
 };
 
-// 注册命令以在新项目中应用全局 Git 模板
 const applyTemplate = function (context: vscode.ExtensionContext) {
   const globalTemplates = getGlobalGitTemplates(context);
+  if(globalTemplates.length === 0) {
+    vscode.window.showErrorMessage("没有可用的全局 Git 模板, 请新建！");
+  }
+
   vscode.window
     .showQuickPick(
       globalTemplates.map((template) => template.name),
